@@ -5,7 +5,7 @@ const clickOnCookie = document.querySelector("#closedCookie")
 const btnTry = document.querySelector("#btnTry")
 let randomPhrase = document.querySelector("#randomPhrase")
 let createRandomPhrase
-const luckyBiscuitphrases = [
+const luckyBiscuitPhrases = [
   "O sucesso está logo à frente. Continue persistindo!",
   "Grandes desafios trazem grandes recompensas.",
   "A vida é uma jornada, aproveite cada passo.",
@@ -68,8 +68,8 @@ btnTry.addEventListener("click", buttonTry)
 
 function createPhrase() {
   toggleScreen()
-  createRandomPhrase = Math.floor(Math.random() * luckyBiscuitphrases.length)
-  randomPhrase.innerText = luckyBiscuitphrases[createRandomPhrase]
+  createRandomPhrase = Math.floor(Math.random() * luckyBiscuitPhrases.length)
+  randomPhrase.innerText = luckyBiscuitPhrases[createRandomPhrase]
 }
 
 function buttonTry(event) {
